@@ -1,3 +1,5 @@
+// © 2026 RNV-TECH LLC. All rights reserved. Unauthorized copying or distribution prohibited.
+
 // ── CONFIG: replace with your Formspree form IDs from formspree.io ──
 const FORMSPREE_SIGNUP  = 'YOUR_SIGNUP_FORM_ID';
 const FORMSPREE_CONTACT = 'YOUR_CONTACT_FORM_ID';
