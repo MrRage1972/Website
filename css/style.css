@@ -288,7 +288,8 @@ nav.scrolled { padding: 0.8rem 0; background: rgba(0,0,0,0.96); }
 .audience-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 3rem; }
 .audience-card { background: var(--gray-2); border: 1px solid rgba(212,175,55,0.1); border-radius: var(--radius); padding: 1.75rem 1.25rem; text-align: center; transition: var(--transition); cursor: default; }
 .audience-card:hover { border-color: var(--gold); background: rgba(212,175,55,0.05); transform: translateY(-4px); }
-.audience-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+.audience-icon { color: var(--gold); margin-bottom: 0.85rem; display: flex; justify-content: center; }
+.audience-icon svg { width: 34px; height: 34px; }
 .audience-card h4 { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.85); }
 .value-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 4rem; }
 .value-item { text-align: center; }
