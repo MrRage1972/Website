@@ -4,7 +4,7 @@ _Last updated: 2026-06-16_
 
 ## 1. Overview
 
-Marketing site for **RNV-TECH LLC** and its flagship app **MySecretary: Voice to action™**
+Marketing site for **RNV-TECH LLC** and its flagship app **MySecretary: Voice to action**
 (a voice-first AI productivity app). Static site, no framework, no build step — plain
 HTML/CSS/JS served directly.
 
@@ -68,7 +68,7 @@ Completed so far:
 - Instagram (@rnv_tech) + TikTok (@rnv_tech2026) links — contact cards + footer icons.
 - Replaced ALL emoji site-wide with gold Lucide line icons.
 - Wired up Formspree forms (live ID `xeedkoyl`).
-- Rebranded product to **"MySecretary: Voice to action™"** across all pages.
+- Rebranded product to **"MySecretary: Voice to action"** across all pages.
 
 ## 5. Blockers / Needs User Action
 
@@ -88,19 +88,19 @@ Completed so far:
 - **Swap the app mockup for real screenshots.** The "MySecretary — Recording voice
   note…" card (`.app-mockup` in index.html + mysecretary.html) is a stylized placeholder.
   User will provide real app screenshots to replace it. The mockup title bars currently
-  read "MySecretary™" (short, intentional).
+  read "MySecretary" (short, intentional).
 - Log project status to ClickUp once the integration is authorized.
 
 ## 7. Key Design Decisions
 
 - **Static site over WordPress** — GoDaddy Managed WordPress is locked; GitHub Pages is
   free, version-controlled, and lets us serve hand-built HTML.
-- **Product name "MySecretary: Voice to action™"** — applied to page titles, meta
-  descriptions, hero, section headings, and body copy. **Kept SHORT as "MySecretary™"**
-  in: nav menu links, footer links, "Explore MySecretary™" CTA buttons, app-mockup title
-  bars, and the MySuite product-card title (keeps menus/buttons/grid compact). ™ placed at
-  the end of the full phrase per owner preference.
-- **Trademark style:** `MySecretary: Voice to action™` (™ at end of full phrase).
+- **Product name "MySecretary: Voice to action"** — applied to page titles, meta
+  descriptions, hero, section headings, and body copy. **Kept SHORT as "MySecretary"**
+  in: nav menu links, footer links, "Explore MySecretary" CTA buttons, app-mockup title
+  bars, and the MySuite product-card title (keeps menus/buttons/grid compact).
+- **No trademark symbols** — all ™ symbols were removed site-wide (from both MySecretary
+  and MySuite) per owner request. Do not reintroduce ™ when adding copy.
 - **Icons:** inline SVG (Lucide) in gold, not emoji and not an icon font — scalable,
   recolorable via `currentColor`, no external assets. SVG is the standard for any future
   custom icons.
@@ -110,7 +110,7 @@ Completed so far:
   productivity apps that turn voice input into faster business execution and clearer daily
   output."
 - **Legal page wording:** privacy-terms.html WAS initially kept on the short name, then
-  (per owner request) updated to the full "MySecretary: Voice to action™" everywhere except
+  (per owner request) updated to the full "MySecretary: Voice to action" everywhere except
   nav/footer links.
 
 ## 8. Workflow Conventions
