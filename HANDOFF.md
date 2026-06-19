@@ -87,18 +87,20 @@ Completed so far:
 
 - **Swap the app mockup for real screenshots.** The "MySecretary — Recording voice
   note…" card (`.app-mockup` in index.html + mysecretary.html) is a stylized placeholder.
-  User will provide real app screenshots to replace it. The mockup title bars currently
-  read "MySecretary" (short, intentional).
+  User will provide real app screenshots to replace it. The mockup title bars read the
+  full "MySecretary: Voice to action".
 - Log project status to ClickUp once the integration is authorized.
 
 ## 7. Key Design Decisions
 
 - **Static site over WordPress** — GoDaddy Managed WordPress is locked; GitHub Pages is
   free, version-controlled, and lets us serve hand-built HTML.
-- **Product name "MySecretary: Voice to action"** — applied to page titles, meta
-  descriptions, hero, section headings, and body copy. **Kept SHORT as "MySecretary"**
-  in: nav menu links, footer links, "Explore MySecretary" CTA buttons, app-mockup title
-  bars, and the MySuite product-card title (keeps menus/buttons/grid compact).
+- **Product name "MySecretary: Voice to action"** — used EVERYWHERE the product is named:
+  page titles, meta descriptions, hero, section headings, body copy, nav menu links,
+  footer links, CTA buttons, app-mockup title bars, and the MySuite product-card title.
+  (An earlier revision kept nav/footer/buttons/mockups short; the owner later asked for the
+  full name in every instance. There are no short "MySecretary"-only references left —
+  only the lowercase file/asset names `mysecretary.html` and `mysecretary-logo.png`.)
 - **No trademark symbols** — all ™ symbols were removed site-wide (from both MySecretary
   and MySuite) per owner request. Do not reintroduce ™ when adding copy.
 - **Icons:** inline SVG (Lucide) in gold, not emoji and not an icon font — scalable,
