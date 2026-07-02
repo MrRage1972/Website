@@ -99,3 +99,28 @@ function handleContact(e) {
   if (!btn.dataset.origText) btn.dataset.origText = btn.textContent;
   submitToFormspree(FORMSPREE_CONTACT, new FormData(e.target), btn, 'Message Sent! ✓', () => e.target.reset());
 }
+
+// ── Home loading screen (see #rnv-loader in index.html) ──
+(function () {
+  const root = document.documentElement;
+  const loader = document.getElementById('rnv-loader');
+  if (!root.classList.contains('rnv-load')) { if (loader) loader.remove(); return; }
+  if (!loader) { root.classList.remove('rnv-load'); return; }
+
+  const TOTAL = 5400; // full sequence + overlay fade
+  let timer = setTimeout(finish, TOTAL);
+
+  function finish() {
+    clearTimeout(timer);
+    root.classList.remove('rnv-load');
+    loader.remove();
+  }
+  function skip() {
+    if (loader.classList.contains('rnvl-skip-out')) return;
+    clearTimeout(timer);
+    loader.classList.add('rnvl-skip-out');
+    setTimeout(finish, 700);
+  }
+  document.getElementById('rnvl-skip').addEventListener('click', skip);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') skip(); });
+})();
