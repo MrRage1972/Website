@@ -10,9 +10,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="preload" href="images/loader-medallion.webp" as="image" type="image/webp" />
+  <link rel="preload" href="images/loader-wordmark.webp" as="image" type="image/webp" />
   <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // Show the loading screen once per visit; skip it entirely for reduced-motion users
+    (function () {
+      try {
+        if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        if (sessionStorage.getItem('rnvLoaderShown')) return;
+        sessionStorage.setItem('rnvLoaderShown', '1');
+        document.documentElement.classList.add('rnv-load');
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
+
+<!-- ── LOADING SCREEN ── -->
+<div id="rnv-loader" role="status" aria-label="Loading RNV-TECH">
+  <div class="rnvl-lockup">
+    <div class="rnvl-med-wrap">
+      <div class="rnvl-med"></div>
+      <div class="rnvl-glint rnvl-glint-med"></div>
+      <div class="rnvl-arc"></div>
+      <div class="rnvl-pulse"></div>
+    </div>
+    <div class="rnvl-word-wrap">
+      <div class="rnvl-word"></div>
+      <div class="rnvl-glint rnvl-glint-word"></div>
+    </div>
+    <div class="rnvl-progress"><i></i></div>
+  </div>
+  <button type="button" class="rnvl-skip" id="rnvl-skip">Skip</button>
+</div>
 
 <!-- ── NAV ── -->
 <nav id="navbar">
