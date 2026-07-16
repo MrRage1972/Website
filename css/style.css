@@ -316,7 +316,7 @@ nav.scrolled { padding: 0.8rem 0; background: rgba(0,0,0,0.96); }
 .suite-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-bottom: 4rem; }
 .suite-text h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); margin-bottom: 1.25rem; }
 .suite-text p { color: rgba(255,255,255,0.65); line-height: 1.8; margin-bottom: 1.5rem; }
-.suite-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+.suite-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .suite-card { background: var(--gray-2); border: 1px solid rgba(212,175,55,0.08); border-radius: var(--radius); padding: 2rem; transition: var(--transition); }
 .suite-card.flagship { border-color: rgba(212,175,55,0.3); }
 .suite-card:hover { border-color: rgba(212,175,55,0.25); transform: translateY(-3px); }
