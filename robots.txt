@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rnv-tech.com/sitemap.xml
