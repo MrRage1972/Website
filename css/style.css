@@ -179,7 +179,7 @@ nav.scrolled { padding: 0.8rem 0; background: rgba(0,0,0,0.96); }
 }
 .hero-banner-bg {
   position: absolute; inset: 0;
-  background-image: url('images/banner.png');
+  background-image: url('images/og-card.jpg');
   background-size: cover; background-position: center 30%;
   opacity: 0.12;
 }
@@ -405,6 +405,15 @@ footer { background: var(--gray-1); border-top: 1px solid rgba(212,175,55,0.12);
 
 /* ── UTILITY ── */
 .mt-2 { margin-top: 1rem; }
+/* ── BREADCRUMBS ── */
+.breadcrumb { margin-bottom: 1.25rem; }
+.breadcrumb ol { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; list-style: none; font-size: 0.78rem; }
+.breadcrumb li { display: flex; align-items: center; gap: 0.5rem; }
+.breadcrumb li:not(:last-child)::after { content: '/'; color: rgba(212,175,55,0.4); }
+.breadcrumb a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color var(--transition); }
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb [aria-current='page'] { color: var(--gold); }
+
 .page-hero { min-height: 40vh; display: flex; align-items: flex-end; padding: 8rem 0 4rem; position: relative; overflow: hidden; background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(212,175,55,0.1) 0%, transparent 60%); }
 .page-hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1rem; }
 .page-hero p { color: rgba(255,255,255,0.6); font-size: 1.1rem; max-width: 560px; line-height: 1.7; }
