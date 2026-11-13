@@ -8,9 +8,11 @@
   <meta name="description" content="Privacy Policy and Terms of Service for MySecretary: Voice to action and RNV-TECH LLC. Privacy-first by design — your notes, recordings, and photos never touch our servers." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/corporate.css" />
+  <link rel="stylesheet" href="css/legacy-light.css" />
   <link rel="canonical" href="https://rnv-tech.com/privacy-terms.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="RNV-TECH LLC" />
@@ -29,28 +31,40 @@
 <body>
 
 <!-- ── NAV ── -->
-<nav id="navbar">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="RNV-TECH LLC" class="nav-logo-img" />
+<div class="c-utility">
+  <div class="c-wrap">
+    <span>Custom software development · Serving clients nationwide</span>
+    <a href="mailto:Support@rnv-tech.com">Support@rnv-tech.com</a>
+  </div>
+</div>
+<header class="c-header">
+  <div class="c-wrap">
+    <div class="c-header-row">
+      <a href="index.html" class="c-brand" aria-label="RNV-TECH LLC home">
+        <span class="c-brand-name">RNV-TECH</span>
+        <span class="c-brand-llc">LLC</span>
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="mysecretary.html">MySecretary: Voice to action</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://apps.apple.com/us/app/mysecretary-voice-to-action/id6780405200" target="_blank" rel="noopener" class="btn btn-gold nav-cta">Download the App</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <nav class="c-nav" aria-label="Primary">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#work">Work</a>
+        <a href="mysecretary.html">MySecretary: Voice to action</a>
+        <a href="founder.html">Company</a>
+        <a href="index.html#contact" class="c-btn c-btn-dark">Schedule a consultation</a>
+      </nav>
+      <button type="button" class="c-burger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="index.html">Home</a>
+    <div class="c-mobile" id="mobile-menu">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="index.html#work">Work</a>
       <a href="mysecretary.html">MySecretary: Voice to action</a>
+      <a href="founder.html">Company</a>
       <a href="contact.html">Contact</a>
-      <a href="https://apps.apple.com/us/app/mysecretary-voice-to-action/id6780405200" target="_blank" rel="noopener" class="btn btn-gold">Download the App</a>
+      <a href="index.html#contact" class="c-btn c-btn-dark">Schedule a consultation</a>
     </div>
   </div>
-</nav>
+</header>
 
 <!-- ── PAGE HERO ── -->
 <div class="page-hero">
@@ -252,27 +266,44 @@
 </section>
 
 <!-- ── FOOTER ── -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="RNV-TECH LLC" class="footer-logo-img" />
-        <div class="footer-tagline">RNV-TECH LLC builds executive-grade software and AI productivity apps that turn voice input into faster business execution and clearer daily output.</div>
-        <div class="footer-email"><a href="mailto:Support@rnv-tech.com">Support@rnv-tech.com</a></div>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/rnv_tech" target="_blank" rel="noopener" aria-label="RNV-TECH on Instagram"><svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-          <a href="https://www.tiktok.com/@rnv_tech2026" target="_blank" rel="noopener" aria-label="RNV-TECH on TikTok"><svg class="social-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-2.97v13.06a2.77 2.77 0 1 1-2.77-2.77c.19 0 .38.02.56.06V9.32a5.8 5.8 0 0 0-.56-.03 5.83 5.83 0 1 0 5.83 5.83V8.73A7.5 7.5 0 0 0 21 10.06V7.1a4.55 4.55 0 0 1-4.4-4.55V2z"/></svg></a>
+<footer class="c-footer">
+  <div class="c-wrap">
+    <div class="c-footer-top">
+      <div class="c-footer-brand">
+        <span class="c-brand-name">RNV-TECH LLC</span>
+        <p>Custom software development and the company behind MySecretary: Voice to action.</p>
+        <a href="mailto:Support@rnv-tech.com">Support@rnv-tech.com</a>
+        <div class="c-footer-social">
+          <a href="https://www.instagram.com/rnv_tech" target="_blank" rel="noopener" aria-label="RNV-TECH on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@rnv_tech2026" target="_blank" rel="noopener" aria-label="RNV-TECH on TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 2h-2.97v13.06a2.77 2.77 0 1 1-2.77-2.77c.19 0 .38.02.56.06V9.32a5.8 5.8 0 0 0-.56-.03 5.83 5.83 0 1 0 5.83 5.83V8.73A7.5 7.5 0 0 0 21 10.06V7.1a4.55 4.55 0 0 1-4.4-4.55V2z"/></svg></a>
         </div>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="mysecretary.html">MySecretary: Voice to action</a>
-        <a href="founder.html">Founder</a>
-        <a href="contact.html#launch">Launch List</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy-terms.html">Privacy & Terms</a>
+      <div class="c-footer-cols">
+        <div class="c-footer-col">
+          <h2>Services</h2>
+          <a href="index.html#services">Mobile applications</a>
+          <a href="index.html#services">Internal platforms</a>
+          <a href="index.html#services">AI integration</a>
+          <a href="index.html#engagement">Engagement models</a>
+        </div>
+        <div class="c-footer-col">
+          <h2>Products</h2>
+          <a href="mysecretary.html">MySecretary: Voice to action</a>
+          <a href="https://apps.apple.com/us/app/mysecretary-voice-to-action/id6780405200" target="_blank" rel="noopener">Download on the App Store</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html#launch">Launch List</a>
+        </div>
+        <div class="c-footer-col">
+          <h2>Company</h2>
+          <a href="founder.html">Leadership</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy-terms.html">Privacy &amp; Terms</a>
+        </div>
       </div>
-      <div class="footer-copy">© 2026 RNV-TECH LLC. All rights reserved.</div>
+    </div>
+    <div class="c-footer-base">
+      <span>© 2026 RNV-TECH LLC. All rights reserved.</span>
+      <a href="privacy-terms.html">Privacy &amp; Terms</a>
     </div>
   </div>
 </footer>
