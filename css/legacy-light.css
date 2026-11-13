@@ -1,0 +1,107 @@
+/* © 2026 RNV-TECH LLC. All rights reserved. Unauthorized copying or distribution prohibited. */
+
+/* Corporate light theme for the pages still built on style.css
+   (mysecretary.html, contact.html, privacy-terms.html).
+   Load order: style.css, corporate.css, then this file.
+   It re-points style.css's colour variables and overrides the values
+   style.css hard-codes for a dark background. */
+
+:root {
+  --black: #ffffff;
+  --white: #111214;
+  --gray-1: #f6f5f2;
+  --gray-2: #ffffff;
+  --gray-4: #5c5f66;
+  --gold: #7a5f0c;
+  --gold-lt: #7a5f0c;
+  --gold-dk: #7a5f0c;
+  --radius: 2px;
+  --radius-lg: 2px;
+  --ll-line: #e2e0da;
+  --ll-body: #3d3f45;
+  --ll-accent: #D4AF37;
+}
+
+body { font-size: 17px; }
+html { scroll-padding-top: 16px; }
+
+/* ── Type ── */
+h1, h2, h3, h4 { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 600; letter-spacing: -0.015em; color: #111214; }
+.page-hero h1 { font-weight: 600; font-size: clamp(36px, 4.2vw, 56px); letter-spacing: -0.02em; }
+.gold-text { background: none; -webkit-background-clip: border-box; background-clip: border-box; -webkit-text-fill-color: currentColor; color: inherit; }
+.section-label { font-size: 13px; letter-spacing: 0.16em; }
+.gold-line { background: var(--ll-accent); border-radius: 0; }
+.value-number { font-family: 'Inter', sans-serif; font-weight: 600; background: none; -webkit-text-fill-color: currentColor; color: #111214; }
+
+.page-hero p, .section-header p, .app-hero-card p, .feature-card p, .suite-card p,
+.value-desc, .contact-info p, .contact-link, .launch-card p, .perk,
+.faq-item .faq-answer, .legal-card p, .legal-card ul li, .legal-table td, .legal-note { color: var(--ll-body); }
+.audience-card h4, .faq-item summary, .legal-card h4, .legal-card strong { color: #111214; }
+.feature-card h4, .suite-card h4 { font-size: 1.05rem; }
+.feature-card p, .suite-card p { font-size: 0.95rem; }
+.faq-item .faq-answer, .legal-card p, .legal-card ul li { font-size: 1rem; }
+
+/* ── Layout: line page content up with the shared header ── */
+.container { max-width: 1200px; padding: 0 32px; }
+.page-hero .container { width: 100%; }
+@media (max-width: 768px) { .container { padding: 0 20px; } }
+
+/* ── Sections ── */
+.page-hero { background: #f6f5f2; border-bottom: 1px solid var(--ll-line); align-items: center; padding-bottom: 4.5rem; }
+#audience, #whats-next, #launch { border-top: 1px solid var(--ll-line); border-bottom: 1px solid var(--ll-line); }
+#cta::before, .app-hero-card::before, .app-hero-card::after, .launch-card::before,
+.legal-card::before, .phone-shot::before, .app-mockup::before { display: none; }
+
+/* Product logos are gold on a solid black square (no transparency), so present
+   them as deliberate dark tiles rather than black boxes on a light page. */
+.page-hero-logo { height: 120px; margin: 0 0 1.5rem; border-radius: 2px; }
+.suite-logo { height: 120px; border-radius: 2px; }
+
+/* ── Buttons ── */
+.btn { border-radius: 2px; font-size: 15px; letter-spacing: 0; padding: 0.85rem 1.6rem; }
+.btn-gold { background: #0b0b0c; color: #ffffff; }
+.btn-gold:hover { background: #2a2b2f; transform: none; box-shadow: none; filter: none; }
+.btn-outline { color: #111214; border: 1px solid #111214; }
+.btn-outline:hover { background: #111214; color: #ffffff; transform: none; box-shadow: none; }
+
+/* ── Cards and panels ── */
+.card, .feature-card, .audience-card, .suite-card, .faq-item, .legal-card,
+.launch-card, .app-hero-card, .stat-card { background: #ffffff; border: 1px solid var(--ll-line); border-radius: 2px; box-shadow: none; }
+.app-hero-card, .launch-card { border-top: 3px solid var(--ll-accent); }
+.suite-card.flagship { border-color: var(--ll-line); border-top: 3px solid var(--ll-accent); }
+.card:hover, .feature-card:hover, .audience-card:hover, .suite-card:hover { transform: none; box-shadow: none; border-color: #b9b6ad; background: #ffffff; }
+.suite-card.flagship:hover { border-top-color: var(--ll-accent); }
+.faq-item[open] { border-color: #b9b6ad; }
+.faq-item summary:hover { color: var(--gold); }
+.feature-icon { background: #f6f5f2; border: 1px solid var(--ll-line); border-radius: 2px; }
+.contact-link-icon { border: 1px solid var(--ll-line); border-radius: 2px; color: var(--gold); }
+.phone-shot { border-color: #b9b6ad; box-shadow: 0 24px 60px rgba(17,18,20,0.18); }
+
+/* ── Pills and badges ── */
+.app-badge, .cta-badge, .hero-label, .legal-updated, .feature-tag, .suite-card-badge, .legal-tab { border-radius: 2px; }
+.app-badge, .cta-badge, .hero-label, .legal-updated { background: #f6f5f2; border: 1px solid var(--ll-line); }
+.feature-tag { background: #f6f5f2; border: 1px solid var(--ll-line); color: var(--ll-body); }
+.badge-live { background: var(--ll-accent); color: #0b0b0c; border-color: var(--ll-accent); }
+.badge-soon { background: #f6f5f2; color: var(--gray-4); border-color: var(--ll-line); }
+.legal-tab { color: var(--ll-body); border: 1px solid var(--ll-line); }
+.legal-tab:hover, .legal-tab.active { background: #111214; border-color: #111214; color: #ffffff; }
+
+/* ── Forms ── */
+.form-label { font-size: 14px; color: #111214; letter-spacing: 0; }
+.form-input { border: 1px solid #8b8e96; border-radius: 2px; font-size: 16px; }
+.form-input:focus { border-color: #111214; }
+.signup-form { background: #ffffff; border: 1px solid #8b8e96; border-radius: 2px; }
+.signup-form:focus-within { border-color: #111214; }
+.signup-form input { font-size: 16px; }
+.signup-form button { border-radius: 2px; }
+.form-input:focus-visible, .signup-form input:focus-visible, .btn:focus-visible, .legal-tab:focus-visible, .faq-item summary:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* ── Legal ── */
+.legal-card h3 { border-top: 1px solid var(--ll-line); }
+.legal-table th { background: #f6f5f2; border: 1px solid var(--ll-line); }
+.legal-table td { border: 1px solid var(--ll-line); }
+.legal-note { background: #f6f5f2; border: 1px solid var(--ll-line); border-radius: 2px; font-style: normal; }
+
+@media (max-width: 768px) {
+  .signup-form, .signup-form button { border-radius: 2px; }
+}
