@@ -226,3 +226,11 @@ footer.c-footer { background: var(--c-night); color: var(--c-ivory); border-top:
 @media (prefers-reduced-motion: reduce) {
   .c-btn { transition: none; }
 }
+
+/* ── Breadcrumb ── */
+.c-crumb ol { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; list-style: none; font-size: 14px; color: var(--c-muted); }
+.c-crumb li { display: flex; align-items: center; gap: 8px; }
+.c-crumb li:not(:last-child)::after { content: '/'; color: var(--c-muted); }
+.c-page .c-crumb a { color: var(--c-muted); text-decoration: none; }
+.c-page .c-crumb a:hover { color: var(--c-gold-ink); }
+.c-crumb [aria-current='page'] { color: var(--c-ink); }
